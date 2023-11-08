@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../../partials/head") %>
+<body>
+
+    <%- include("../../partials/nav") %>
+
+    <main class="index-tweets-main container">
+        <h3>Tweets</h3>
+        <div class="tweets">
+
+            <% for(let tweet of tweets){ %>
+
+                <div class="tweet-card">
+                    <div class="user"><a href="/users/<%= tweet.user._id %>">By <%= tweet.user.name %></a></div>
+                    <div class="tweet"><%= tweet.tweet %></div>
+                    <div class="date"><%= tweet.createdDate %></div>
+                </div>
+
+                <% } %>
+        </div>
+    </main>
+    
+</body>
+</html>

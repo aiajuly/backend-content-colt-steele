@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+<body>
+
+    <main class="layout">
+
+        <%- include('../partials/nav') %>
+
+
+        <main class="main-register container">
+            <form action="/login" method="POST" class="register-form">
+
+                <%- include('../partials/flash') %>
+
+                <div class="field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" autocomplete="off">
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button class="submit">Submit</button>
+            </form>
+
+        </main>
+
+
+        <%- include('../partials/footer') %>
+
+    </main>
+
+</body>
+</html>

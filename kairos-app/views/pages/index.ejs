@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+<body>
+    
+    <%- include('../partials/nav') %>
+
+    <main class="index-main container">
+        <h3>Watches</h3>
+        <div class="watches">
+
+            <% for(let watch of watches){ %>
+                <a href="/watches/<%= watch._id %>">
+                    <div class="watch-card">
+                        <div class="up"><img src="<%= watch.img %>" alt=""></div>
+                        <div class="down">
+                            <div class="name"><%= watch.name %></div>
+                            <div class="price">$<%= watch.price %></div>
+                        </div>
+                    </div>
+                </a>
+                <% } %>
+        </div>
+    </main>
+
+
+    <%- include('../partials/footer') %>
+</body>
+</html>

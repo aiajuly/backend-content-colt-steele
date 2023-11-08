@@ -1,0 +1,1 @@
+// you can add a form with a button 'logout', than form submit to a post route of /logout, what this route do is simply delete the user_id from the session or destroy the session entirely with this method: req.session.destroy()

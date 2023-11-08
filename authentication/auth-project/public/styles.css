@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: lato, sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.container{
+    max-width: 700px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    background-color: #333;
+}
+
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar .left{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 20px;
+}
+
+.navbar a{
+    font-size: 15px;
+    color: white;
+    margin: 0 12px;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    background-color: #333;
+    height: 35px;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.trademark{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.main-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form .field{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.register-form .field input{
+    background-color: whitesmoke;
+    border: 2px solid #333;
+    border-radius: 2px;
+    margin: 4px 0 16px;
+    padding: 4px 3px;
+    outline: none;
+}
+
+.register-form .field input:focus{
+    border-color: black;
+}
+
+.register-form .submit{
+    background-color: #198754;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+.register-form .submit:hover{
+    background-color: #177549;
+}
+
+
+.btn-close:focus,.btn-close:active {
+    outline: none !important;
+    box-shadow: none;
+    }

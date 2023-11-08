@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: lato, sans-serif;
+}
+
+h3{
+    font-size: 1.953rem;
+    margin-bottom: 50px;
+}
+
+.container{
+    max-width: 650px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+header{
+    margin-bottom: 35px;
+}
+
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #71767b;
+    
+}
+
+.navbar .left .logo{
+    font-size: 20px;
+}
+
+.navbar .right a{
+    padding: 4px 8px;
+    margin: 4px;
+    text-decoration: none;
+}
+
+.navbar .right a:hover{
+    background-color: #1e1e1e;
+}
+
+.user-card .img-container{
+    width: 50px;
+    height: 50px;
+}
+
+.user-card .img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.user-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 35px 0;
+    padding: 12px 0;
+    border: 1px solid #71767b;
+    border-radius: 2px;
+}
+
+
+.user-card a{
+    text-decoration: none;
+    padding: 4px 10px;
+    background-color: #198754;
+    border-radius: 2px;
+}
+
+.user-card a:hover{
+    background-color: #117546;
+}
+
+.new-main .form-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.new-main form{
+    display: flex;
+    justify-content: center;
+}
+
+.new-main .form-body .field{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.new-main .form-body .field input{
+    border: 2px solid #71767b;
+    border-radius: 2px;
+    width: 400px;
+    height: 33px;
+    padding: 12px 4px;
+    margin: 4px 0 18px;
+}
+
+.new-main .form-body .field input:focus{
+    outline: none;
+    border-color: #ffffff;
+}
+
+.new-main .form-body button{
+    border: none;
+    cursor: pointer;
+    width: 90px;
+    background-color: #198754;
+    padding: 8px 0px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.new-main .form-body button:hover{
+    background-color: #117546;
+}
+
+.show-main .user .user-details .img-container{
+    width: 200px;
+    height: 200px
+}
+
+.show-main .user .user-details .img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.show-main .user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #71767b;
+    padding: 15px 15px;
+    font-size: 20px;
+}
+
+.user .user-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.user .user-details .buttons{
+    display: flex;
+    gap: 14px;
+}
+
+.user .user-details .buttons a, .user .user-details .buttons button{
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 12px 0;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.user .user-details .buttons .tweet{
+    background-color: #198754;
+}
+
+.user .user-details .buttons .edit{
+    background-color: #525456;
+}
+
+.user .user-details .buttons .delete{
+    background-color: #dc3545;
+}
+
+
+.user .user-details .buttons .tweet:hover{
+    background-color: #117546;
+}
+
+.user .user-details .buttons .edit:hover{
+    background-color: #414243;
+}
+
+.user .user-details .buttons .delete:hover{
+    background-color: #b02231;
+}
+
+.user-tweets{
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #71767b;
+}
+
+.user-tweets h4{
+    font-size: 1.563rem;
+    margin: 20px 0 15px;
+}
+
+.user-tweets .tweet{
+    border-bottom: 1px solid #71767b;
+    margin: 26px 14px;
+    padding-bottom: 4px;
+    overflow-wrap: break-word;
+}
+
+.user-tweets .tweet .date{
+    display: block;
+    font-size: 10px;
+    color: #71767b;
+}
+
+
+.new-tweet-main form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-tweet-main textarea{
+    display: block;
+    border: 2px solid #71767b;
+    border-radius: 2px;
+    width: 400px;
+    height: 150px;
+    padding: 12px 8px;
+    margin: 4px 0 18px;
+    font-size: 16px;
+}
+
+.new-tweet-main textarea:focus{
+    outline: none;
+    border-color: #ffffff;
+}
+
+.new-tweet-main button{
+    border: none;
+    cursor: pointer;
+    width: 90px;
+    background-color: #198754;
+    padding: 8px 0px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.new-tweet-main button:hover{
+    background-color: #117546;
+}
+.index-tweets-main .tweets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-tweets-main .tweets .tweet-card{
+    width: 500px;
+    overflow-wrap: break-word;
+    border: 1px solid #71767b;
+    padding: 12px 8px;
+    margin: 22px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tweets .tweet-card a{
+    text-decoration: none;
+    font-size: 12px;
+    border-bottom: 1px solid #71767b;
+}
+
+.tweets  .tweet-card .tweet{
+    font-size: 20px;
+}
+
+.tweets  .tweet-card .date{
+    margin: 10px 0;
+    font-size: 10px;
+}
+
+.tweet-buttons{
+    display: flex;
+}
+
+.tweet-buttons button, .tweet-buttons a{
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 4px 10px;
+    margin: 12px 6px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.tweet-buttons button{
+    background-color: #dc3545;
+}
+
+.tweet-buttons button:hover{
+    background-color: #b02231;
+}
+
+.tweet-buttons a{
+    background-color: #525456;
+}
+
+.tweet-buttons a:hover{
+    background-color: #414243;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../../partials/head") %>
+<body>
+
+    <%- include("../../partials/nav") %>
+
+    <main class="new-main container">
+
+
+        <form action="/users/<%= foundUser._id %>?_method=PATCH" method="POST">
+
+            <div class="form-body">
+
+                <h3>New User</h3>
+
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required value="<%= foundUser.name %>">
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required value="<%= foundUser.email %>">
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required value="<%= foundUser.password %>">
+                </div>
+
+                <div class="field">
+                    <label for="profile-image">Profile Image</label>
+                    <input type="text" id="profile-image" name="profileImage" required value="<%= foundUser.profileImage %>">
+                </div>
+
+                <button>Submit</button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+    
+</body>
+</html>

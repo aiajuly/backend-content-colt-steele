@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../../partials/head") %>
+<body>
+
+    <%- include("../../partials/nav") %>
+
+    <main class="new-tweet-main container">
+
+
+        <form action="/users/<%= userId %>/tweets/<%= foundTweet._id %>?_method=PUT" method="POST">
+
+            <div class="form-body">
+
+                <h3>New Tweet</h3>
+
+                <textarea name="tweet" id="tweet" required><%= foundTweet.tweet %></textarea>
+
+                
+
+                <button>Submit</button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+    
+</body>
+</html>

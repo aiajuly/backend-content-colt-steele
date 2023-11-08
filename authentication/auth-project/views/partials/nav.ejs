@@ -1,0 +1,18 @@
+<header class="header">
+    <nav class="navbar container">
+        <div class="left">
+            <div class="logo">Mobile</div>
+            <a href="#">Products</a>
+        </div>
+
+        <div class="right">
+            <% if (!currentUser){ %>
+                <a href="/register">Register</a>
+                <a href="/login">Log In</a>
+            <% } else{ %> 
+            <a href="/logout">Log Out</a>
+            <% } %>
+            
+        </div>
+    </nav>
+</header>

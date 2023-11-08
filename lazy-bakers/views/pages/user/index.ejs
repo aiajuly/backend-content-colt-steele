@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../../partials/head") %>
+<body>
+
+    <%- include("../../partials/nav") %>
+
+    <main class="index-main container">
+        <h3>Users</h3>
+        <div class="users">
+
+            <% for(let user of users){ %>
+
+                <div class="user-card">
+                    <div class="img-container"><img src="<%= user.profileImage %>" alt="Profile Image"></div>
+                    <div class="name">Name: <%= user.name %></div>
+                    <div class="email">Email: <%= user.email %></div>
+                    <a href="/users/<%= user._id %>">Details</a>
+                </div>
+
+                <% } %>
+        </div>
+    </main>
+    
+</body>
+</html>
