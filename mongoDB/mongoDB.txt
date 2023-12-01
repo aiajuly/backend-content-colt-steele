@@ -1,0 +1,66 @@
+
+
+
+
+mongoDB is made up of databases; each database can have collections; each collection can have items in it.
+
+db 
+Show current database name.
+
+show dbs
+Show all dbs.
+
+use dbName
+Switch to dbName or create it switch to it if it doesn't exist.
+
+MongoDB stores data inside something called BSON which looks much like JSON.
+
+show collections
+Show all collections in the db.
+
+++++++++++++++++++++++++
+
+Inserting:
+db.collectionName.insertOne({object})
+db.collectionName.insertMany([ {object}, {object} ])
+db.collectionName.insert({object} or [ {object}, {object} ])
+
+++++++++++++++++++++++++
+
+Quering:
+db.collectionName.find()
+db.collectionName.find({something: is something})
+db.collectionName.findOne({something: is something})
+
+++++++++++++++++++++++++
+
+Updating:
+db.collectionName.updateOne({something: is something}, {$set: {something: soemthing}})
+db.collectionName.updateMany({something: is something}, {$set: {something: soemthing}})
+db.collectionName.updateMany({something: is something}, {$set: {something: soemthing}, $currentDate: {lastChanged: true}})
+
+++++++++++++++++++++++++
+
+Deleting:
+db.collectionName.deleteOne({something: is something})
+db.collectionName.deleteMany({something: is something})
+db.collectionName.deleteMany({})
+++++++++++++++++++++++++
+
+Operators:
+db.collectionName.find({something: { $gt: 20}})
+You can look for more operators on mongoDB docs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
